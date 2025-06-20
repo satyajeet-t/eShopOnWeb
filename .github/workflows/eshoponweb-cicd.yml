@@ -75,7 +75,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v2
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.az }}
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
